@@ -137,3 +137,33 @@ class Solution {
         return deque.isEmpty();
     }
 }
+
+/**1047. Remove All Adjacent Duplicates In String
+ * https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string/description/
+ * You are given a string s consisting of lowercase English letters. A duplicate removal 
+ * consists of choosing two adjacent and equal letters and removing them.
+
+We repeatedly make duplicate removals on s until we no longer can.
+
+Return the final string after all such duplicate removals have been made. 
+It can be proven that the answer is unique.
+ */
+class Solution {
+    public String removeDuplicates(String s) {
+        Stack<Character> stack = new Stack<>();
+        char ch;
+        for(int i = 0; i < s.length(); i++){
+            ch = s.charAt(i);
+            if(stack.isEmpty() || stack.peek() != ch){
+                stack.push(ch);
+            }else if(stack.peek() == ch){
+                stack.pop();
+            }
+        }
+        String str = "";
+        while (!stack.isEmpty()) {
+            str = stack.pop() + str;
+        }
+        return str;
+    }
+}
