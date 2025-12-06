@@ -9,3 +9,15 @@ I am starting a 60-day challenge to solve 150 LeetCode problems and record my pr
 ### Day 8 - String Part 02
 ### Day 9 - Stack and Queue Part 01
 ### Day 11 - Stack and Queue Part 02
+### Day 12 - Binary tree part 01
+
+**Note**
+- **Recursion**: 
+1. Determine the parameters and return value of a recursive function。
+2. Determine the base case.
+3. Determian the logic of a single recursion layer.
+
+-**前中后序历遍**
+1. 前序历遍：中左右；
+2. 中序历遍：左中右；
+3. 后序历遍：左右中；
