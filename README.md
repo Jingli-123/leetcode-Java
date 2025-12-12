@@ -9,7 +9,10 @@ I am starting a 60-day challenge to solve 150 LeetCode problems and record my pr
 ### Day 8 - String Part 02
 ### Day 9 - Stack and Queue Part 01
 ### Day 11 - Stack and Queue Part 02
-### Day 12 - Binary tree part 01
+### Day 12 - Binary tree part 01-1
+### Day 13 - Binary tree part 01-2
+### Day 14 - Binary tree part 02
+### Day 15 - Binary tree part 03
 
 **Note**
 - **Recursion**: 
