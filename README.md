@@ -12,7 +12,7 @@ I am starting a 60-day challenge to solve 150 LeetCode problems and record my pr
 ### Day 12 - Binary tree part 01-1
 ### Day 13 - Binary tree part 01-2
 ### Day 14 - Binary tree part 02
-### Day 15 - Binary tree part 03 & 04
+### Day 15 - Binary tree part 03 & 04 
 ### Day 16 - Binary tree part 05
 
 **Note**
@@ -25,3 +25,7 @@ I am starting a 60-day challenge to solve 150 LeetCode problems and record my pr
 1. 前序历遍：中左右；
 2. 中序历遍：左中右；
 3. 后序历遍：左右中；
+
+-**Note**-
+Todo List
+1. Leetcode - 531
