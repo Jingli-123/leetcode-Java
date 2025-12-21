@@ -85,3 +85,83 @@ class Solution {
     }
 }
 
+/**112. Path Sum
+ * 
+ */
+/**
+ * Definition for a binary tree node.
+ * public class TreeNode {
+ *     int val;
+ *     TreeNode left;
+ *     TreeNode right;
+ *     TreeNode() {}
+ *     TreeNode(int val) { this.val = val; }
+ *     TreeNode(int val, TreeNode left, TreeNode right) {
+ *         this.val = val;
+ *         this.left = left;
+ *         this.right = right;
+ *     }
+ * }
+ */
+class Solution {
+    public boolean hasPathSum(TreeNode root, int targetSum) {
+        if(root == null)return false;
+        targetSum -= root.val;
+        if(root.left == null && root.right == null)return targetSum == 0;
+        if(root.right != null){
+            boolean right = hasPathSum(root.right, targetSum);
+            if(right)return true;
+        }
+        if(root.left != null){
+            boolean left = hasPathSum(root.left, targetSum);
+            if(left)return true;
+        }
+        return false;
+    }
+}
+
+/**113. Path Sum II
+ * 
+ */
+/**
+ * Definition for a binary tree node.
+ * public class TreeNode {
+ *     int val;
+ *     TreeNode left;
+ *     TreeNode right;
+ *     TreeNode() {}
+ *     TreeNode(int val) { this.val = val; }
+ *     TreeNode(int val, TreeNode left, TreeNode right) {
+ *         this.val = val;
+ *         this.left = left;
+ *         this.right = right;
+ *     }
+ * }
+ */
+class Solution {
+    public List<List<Integer>> pathSum(TreeNode root, int targetSum) {
+        List<List<Integer>> path = new ArrayList<>();
+        List<Integer> item = new ArrayList<>();
+        if(root == null)return path;
+        travel(root, targetSum, path, item);
+        return path;
+    }
+    public void travel(TreeNode root, int targetSum, List<List<Integer>> path, List<Integer> item){
+        item.add(root.val);
+        targetSum -= root.val;
+        if(root.left == null && root.right == null){
+            if(targetSum == 0){
+                path.add(new ArrayList<>(item));
+            }
+            return;
+        }
+        if(root.left != null){
+            travel(root.left, targetSum, path, item);
+            item.remove(item.size() - 1);
+        }
+        if(root.right != null){
+            travel(root.right, targetSum, path, item);
+            item.remove(item.size() - 1);
+        }
+    }
+}
