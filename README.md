@@ -14,6 +14,7 @@ I am starting a 60-day challenge to solve 150 LeetCode problems and record my pr
 ### Day 14 - Binary tree part 02
 ### Day 15 - Binary tree part 03 & 04 
 ### Day 16 - Binary tree part 05
+### Day 17 - Binary tree part 06
 
 **Note**
 - **Recursion**: 
@@ -29,3 +30,4 @@ I am starting a 60-day challenge to solve 150 LeetCode problems and record my pr
 -**Note**-
 Todo List
 1. Leetcode - 531
+2. Leetcode - 98
