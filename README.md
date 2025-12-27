@@ -15,6 +15,8 @@ I am starting a 60-day challenge to solve 150 LeetCode problems and record my pr
 ### Day 15 - Binary tree part 03 & 04 
 ### Day 16 - Binary tree part 05
 ### Day 17 - Binary tree part 06 & 07
+### Day 18 - Binary tree part 08
+### Day 19 - Backtracking Algorithm part 01
 
 **Note**
 - **Recursion**: 
@@ -31,3 +33,18 @@ I am starting a 60-day challenge to solve 150 LeetCode problems and record my pr
 Todo List
 1. Leetcode - 531
 2. Leetcode - 98
+
+-**Backtracking Algorithm**-
+伪代码：
+void backtracking(参数) {
+    if (终止条件) {
+        存放结果;
+        return;
+    }
+
+    for (选择：本层集合中元素（树中节点孩子的数量就是集合的大小）) {
+        处理节点;
+        backtracking(路径，选择列表); // 递归
+        回溯，撤销处理结果
+    }
+}
