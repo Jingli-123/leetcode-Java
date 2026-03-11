@@ -18,6 +18,9 @@ I am starting a 60-day challenge to solve 150 LeetCode problems and record my pr
 ### Day 18 - Binary tree part 08
 ### Day 19 - Backtracking Algorithm part 01
 ### Day 20 - Backtracking Algorithm part 02
+### Day 21 - Greedy Algorithm part 01
+### Day 22 - Greedy Algorithm part 02
+### Day 23 - Greedy Algorithm part 03
 
 **Note**
 - **Recursion**: 
