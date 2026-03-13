@@ -21,6 +21,9 @@ I am starting a 60-day challenge to solve 150 LeetCode problems and record my pr
 ### Day 21 - Greedy Algorithm part 01
 ### Day 22 - Greedy Algorithm part 02
 ### Day 23 - Greedy Algorithm part 03
+### Day 24 - Greedy Algorithm part 03
+### Day 25 - Greedy Algorithm part 03
+### Day 26 - Dynamic Programming part 01
 
 **Note**
 - **Recursion**: 
@@ -52,3 +55,11 @@ void backtracking(参数) {
         回溯，撤销处理结果
     }
 }
+
+-**Dynamic Programming**-
+步骤如下：
+1. 确定dp数组（dp table）以及下标的含义
+2. 确定递推公式
+3. dp数组如何初始化
+4. 确定遍历顺序
+5. 举例推导dp数组
